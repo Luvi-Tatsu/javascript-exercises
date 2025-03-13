@@ -1,10 +1,14 @@
-const leapYears = function(leapYear) {
+const leapYears = function(year) {
+const yearDevisibleByFour = year % 4 === 0;
+const butNotInCentury = year % 100 === 0;
+const yearDevisbleByFourCenturies = year % 400 === 0;
 
-if (leapYear % 4 != 0 || leapYear % 400 !=0 && leapYear % 100 === 0){
-    return false;
+
+if (yearDevisibleByFour && !butNotInCentury || yearDevisbleByFourCenturies){
+    return true;
 }
 else {
-    return true;
+    return false;
 }
 };
 
