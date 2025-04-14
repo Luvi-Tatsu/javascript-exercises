@@ -16,6 +16,7 @@ const multiply = function(num) {
 
 const power = function(firstNum,secondNum) {
   return firstNum**secondNum;
+  // return math.pow(firstNum,secondNum)
 };
 
 const factorial = function(n) {
